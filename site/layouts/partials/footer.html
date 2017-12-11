@@ -6,7 +6,13 @@
 							<img src="/img/assets/logo.svg" alt="5th Journey logo" class="logoSVG">
 						</div>
 						<div class="col-sm-6">
-							<h4 class="text-right"><a href="http://fifth-journey.com/corporate/terms-of-service" class="privacy-link">Terms of Service</a> <a href="http://fifth-journey.com/corporate/privacy-policy" class="privacy-link">Privacy Policy</a> © 2017 FIFTH JOURNEY</h4>
+							<h4 class="text-right">
+								<a href="{{ relref . "corporate/terms-of-service.md" }}" class="privacy-link">
+									{{ with .Site.GetPage "page" "corporate" "terms-of-service.md" }}{{ .Title }}{{ end }}
+								</a>
+								<a href="{{ relref . "corporate/privacy-policy.md" }}" class="privacy-link">
+									{{ with .Site.GetPage "page" "corporate" "privacy-policy.md" }}{{ .Title }}{{ end }}
+								</a> © 2017 FIFTH JOURNEY</h4>
 						</div>
 					</div>
 				</div>

@@ -44,3 +44,14 @@
 	</head>
 
 	<body class="sans-serif">
+		<header id="header">
+			<div class="container">
+				<div class="logo-wrapper">
+					<a href="/"><img src="/img/assets/logo.svg" alt="5th Journey logo" class="logoSVG"></a>
+					<h1>Next Generation <br><span>Interactive Entertainment</span></h1>
+					{{ if (not .IsHome) }}
+					<a href="/" class="back-home">Back to Home</a>
+					{{end}}
+				</div>
+			</div>
+		</header>

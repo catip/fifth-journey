@@ -1,6 +1,6 @@
 ---
-title: "Next Generation Interactive Entertainment"
-subtitle: Support sustainable farming while enjoying a cup
+title: Next Generation Interactive Entertainment
+isHomePage: true
 image: /img/home-jumbotron.jpg
 blurb:
     heading: Why Kaldi?
@@ -8,7 +8,7 @@ blurb:
 intro:
     heading: "What we offer"
     text: "Kaldi is the ultimate spot for coffee lovers who want to learn about their java’s origin and support the farmers that grew it. We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone."
-products:
+team:
     - image: img/illustrations-coffee.svg
       text: "We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability."
     - image: /img/illustrations-coffee-gear.svg
