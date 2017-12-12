@@ -1,5 +1,112 @@
 {{ partial "head" . }}
-
-{{ partial "home" . }}
-
+{{ partial "news-carousel" . }}
+<div class="main-container">
+    <div class="clearfix type-titles white-bg">
+        <div class="content row">
+            <div class="col-xs-12">
+                <h2>We build franchises
+					<span class="h2_second_line">for the world</span>
+				</h2>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix type-halfColumnContent white-bg">
+        <div class="content row">
+            <div class="col-md-6">
+                <p><strong>Fifth Journey </strong>develops next-generation Hollywood games and interactive entertainment.</p>
+                <p>From feature animations to cult classics and blockbuster franchises,&nbsp;Fifth Journey&nbsp;is pioneering mobile&nbsp;entertainment&nbsp;in partnership with the world’s leading studios. We’re&nbsp;also advancing the latest technologies, including O2O and AR/VR, and delivering these experiences into the fastest growing markets in the world.</p>
+                <p>
+                    <br>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p>Fifth Journey&nbsp;was founded by a team of acclaimed game developers responsible&nbsp;for some of the biggest interactive hits in Hollywood and chart-topping success in China. We're at the leading edge of entertainment, creating new and exciting experiences for fans and helping Hollywood build franchises like never before.
+                    <br>
+                </p>
+                <p>Fifth Journey is headquartered in Hong Kong with creative operations based in San Francisco and studio operations around the world.&nbsp;</p>
+                <p><strong>TAKE&nbsp;A&nbsp;JOURNEY&nbsp;WITH&nbsp;US!</strong>
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix type-titles grey-bg">
+        <div class="content row">
+            <div class="col-xs-12">
+                <h2>Leadership
+					<span class="h2_second_line">team</span>
+				</h2>
+            </div>
+        </div>
+    </div>
+    {{ range .Params.team }}
+    <div class="clearfix type-teamMember grey-bg">
+        <div class="content row">
+            <div class="col-xs-12 team-member">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive"> </div>
+                    <div class="col-sm-9">
+                        <h3 class="team_member_title">{{ .name }}</h3>
+                        <span class="team_member_role">{{ .title }}</span>
+                        <div class="team_member_descr">
+                            <p>{{ .text }}</p>
+                            <div class="overlay visible-xs"></div>
+                            <a href="#" class="expand visible-xs">Expand<br><i class="glyphicon glyphicon-chevron-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	{{ end }}
+    <div class="white-bg contact-section">
+        <div class="container">
+            <div class="content">
+                <div class="row no-gutter">
+                    <div class="col-xs-12">
+                        <h2>
+                        	Take a journey
+                        	<span class="h2_second_line">with us</span>
+						</h2>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p class="contactlabel">
+                            Address
+                        </p>
+                        <div class="contactInfo">
+                            <p>8/F Cheung Hing Industrial Building</p>
+                            <p>12P Smithfield Road</p>
+                            <p>Kennedy Town
+                                <br>
+                            </p>
+                            <p>Hong Kong
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p class="contactlabel">
+                            E-mail
+                        </p>
+                        <div class="contactInfo">
+                            <p><a href="mailto:info@fifth-journey.com">info@fifth-journey.com</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p class="contactlabel">
+                            Social
+                        </p>
+                        <div class="contactInfo social">
+                            <a href="https://www.facebook.com/fifthjourney" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a style="display: none;" href="" target="_blank"><i class="fa fa-twitter"></i></a>
+                            <a style="display: none;" href="" target="_blank"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                {{ partial "contact-form" . }}
+            </div>
+        </div>
+    </div>
+</div>
 {{ partial "footer" . }}

@@ -1,7 +1,8 @@
 ---
 title: Privacy Policy
-effectiveDate: July 22<sup>nd</sup>, 2016
----  
+--- 
+Effective Date: July 22<sup>nd</sup>, 2016
+
 This Privacy Policy explains how information about you is collected, used and disclosed by Fifth Journey Limited and its subsidiaries ("Fifth Journey," "we" or "us"). This Privacy Policy applies to information we collect when you use our websites, mobile applications and other online products and services (collectively, the "Services"). This Privacy Policy does not apply to the information collected from: (1) web-based applications that are based on our mobile applications but are published by third parties on third party platforms (each a “Third Party Platform”), (2) mobile applications that we distribute on behalf of third parties and which are hosted and operated by such parties, or (3) the on-line submission of resumes and employment applications in connection with the Jobs section of our website.
 
 By downloading, accessing and/or playing our games, or interacting with our websites or other Services, you agree to the use of your information in accordance with this Privacy Policy. If you have any concerns about providing information to us or it being used as described in this Privacy Policy you should not use our games or other Services.

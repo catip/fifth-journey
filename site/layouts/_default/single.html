@@ -1,5 +1,16 @@
 {{ partial "head" . }}
-{{ partial "nav" . }}
-{{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }}
-  {{ .Content }}
+
+<div class="container">
+	<div class="content">
+		<article>
+			<h1 class="text-center">{{ .Title}}</h1>
+			<div class="col-md-10 col-md-offset-1">
+				{{ .Content }}
+			</div>
+		</article>
+
+	</div>
+	
+</div>
+
 {{ partial "footer" . }}

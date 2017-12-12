@@ -1,33 +1,52 @@
-<!-- Contact -->
-<div class="mb4">
-  <h4 class="f3 b lh-title mb3 tc">Drop us a line below</h4>
-
-  <form action="">
-    <div class="flex-l mhn1-l">
-          <!-- Name -->
-      <div class="ph1-l w-50-l">
-        <fieldset>
-          <input type="text" id="name" placeholder="Name" class="w-100 mb2">
-          <label for="name">Name</label>
-        </fieldset>
-      </div>
-          <!-- Email -->
-      <div class="ph1-l w-50-l">
-        <fieldset>
-          <input type="email" id="email" placeholder="Email" class="w-100 mb2">
-          <label for="email">Email</label>
-        </fieldset>
-      </div>
+<div class="row">
+    <div class="col-xs-12 contactForm">
+        <form method="post" id="getintouch" data-parsley-ui-enabled="true" data-parsley-validate="" novalidate="" _lpchecked="1">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                    <div class="row">
+                        <div class="col-xs-12 form-success">
+                            Message Sent.
+                            <br>
+                            <a href="#form" class="toggle-form">Send another?</a>
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label for="name">Your Name</label>
+                                <input class="form-control" name="name" id="name" data-parsley-required-message="Please enter your name" required="" data-parsley-id="4" type="text">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="email">Your Email</label>
+                                <input class="form-control" name="email" id="email" data-parsley-required-message="Please enter your email" required="" data-parsley-id="6" type="email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <span class="sod_select" tabindex="0" data-cycle="false" data-links="false" data-links-external="false" data-placeholder-option="false" data-filter=""><span class="sod_label">Please choose a topic</span><span class="sod_list_wrapper"><span class="sod_list"><span class="sod_option  selected active" title="Please choose a topic" data-value="">Please choose a topic</span><span class="sod_option" title="Media" data-value="Media">Media</span><span class="sod_option" title="Careers" data-value="Careers">Careers</span><span class="sod_option" title="Partnerships" data-value="Partnerships">Partnerships</span><span class="sod_option" title="Investment Opportunities" data-value="Investment Opportunities">Investment Opportunities</span><span class="sod_option" title="Other" data-value="Other">Other</span></span>
+                                </span>
+                                <select class="form-control" name="topic" id="topic" data-parsley-required-message="Please select a topic" required="" data-parsley-id="8">
+                                    <option value="">Please choose a topic</option>
+                                    <option value="Media">Media</option>
+                                    <option value="Careers">Careers</option>
+                                    <option value="Partnerships">Partnerships</option>
+                                    <option value="Investment Opportunities">Investment Opportunities</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <label for="message">Your message</label>
+                                <textarea required="" class="form-control" name="message" id="message" data-parsley-id="10"></textarea>
+                            </div>
+                        </div>
+                        <input name="s_catch" type="hidden">
+                        <button type="submit" class="submit btn btn-default formbutton">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-
-        <!-- Message -->
-    <fieldset>
-      <textarea name="name" placeholder="Your message" rows="8" cols="80" id="message" class="w-100"></textarea>
-      <label for="message">Your message</label>
-    </fieldset>
-        <!-- Button -->
-    <div class="tc">
-      <button type="submit" class="btn w-100 w-auto-ns raise">Submit</button>
-    </div>
-  </form>
 </div>

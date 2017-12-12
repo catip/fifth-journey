@@ -1,0 +1,16 @@
+<div class="carousel-container multiple">
+    <div class="carousel">
+        {{ range (.Site.GetPage "section" "news").Pages }}
+        <div class="item multiple" style="background: url({{ .Param "images.desktop" }}) no-repeat center center/cover;" data-mobile-image="{{ .Param "images.mobile_small" }}" data-mobile-image-single="{{ .Param "images.mobile_large" }}">
+            <div class="carousel_img_overlay"></div>
+            <div class="carousel_txt">
+                <h4 class="date">{{ .Date.Format "January 2, 2006" }}</h4></a>
+                <a href="{{ .Permalink }}"><h1 class="h1_carousel txt_white">{{ .Title }}</h1></a>
+                <a href="{{ .Permalink }}" class="back-home txt_white">READ MORE</a>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    <div class="carousel-nav prev hidden-xs"><img src="/img/assets/scroll-left@2x.png" alt="Prev"></div>
+    <div class="carousel-nav next"><img src="/img/assets/scroll-right@2x.png" alt="Next"></div>
+</div>
